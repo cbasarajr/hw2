@@ -86,6 +86,27 @@ Studio.destroy_all
 # Do not use hard-coded foreign key IDs.
 # TODO!
 
+movie_new = Movie.new
+movie_new["title"] = "Batman Begins"
+movie_new["year_released"] = 2005
+movie_new["rated"] = "PG-13"
+movie_new.save
+
+movie_new = Movie.new
+movie_new["title"] = "The Dark Night"
+movie_new["year_released"] = 2008
+movie_new["rated"] = "PG-13"
+movie_new.save
+
+movie_new = Movie.new
+movie_new["title"] = "The Dark Night Rises"
+movie_new["year_released"] = 2012
+movie_new["rated"] = "PG-13"
+movie_new.save
+
+
+
+
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
