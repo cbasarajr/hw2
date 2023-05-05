@@ -177,12 +177,12 @@ movie.save
 batman2 = Movie.find_by({"title" => "The Dark Knight"})
 
 
-movie_new = Movie.new
-movie_new["title"] = "The Dark Night Rises"
-movie_new["year_released"] = 2012
-movie_new["rated"] = "PG-13"
-movie_new["studio_id"] = warner["id"]
-movie_new.save
+movie = Movie.new
+movie["title"] = "The Dark Night Rises"
+movie["year_released"] = 2012
+movie["rated"] = "PG-13"
+movie["studio_id"] = warner["id"]
+movie.save
 
 batman3 = Movie.find_by({"title" => "The Dark Knight Rises"})
 
