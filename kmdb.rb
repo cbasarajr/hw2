@@ -157,22 +157,22 @@ actor.save
 anne = Actor.find_by({"name" => "Anne Hathaway"})
 
 
-movie_new = Movie.new
-movie_new["title"] = "Batman Begins"
-movie_new["year_released"] = 2005
-movie_new["rated"] = "PG-13"
-movie_new["studio_id"] = warner["id"]
-movie_new.save
+movie = Movie.new
+movie["title"] = "Batman Begins"
+movie["year_released"] = 2005
+movie["rated"] = "PG-13"
+movie["studio_id"] = warner["id"]
+movie.save
 
 batman1 = Movie.find_by({"title" => "Batman Begins"})
 
 
-movie_new = Movie.new
-movie_new["title"] = "The Dark Night"
-movie_new["year_released"] = 2008
-movie_new["rated"] = "PG-13"
-movie_new["studio_id"] = warner["id"]
-movie_new.save
+movie = Movie.new
+movie["title"] = "The Dark Night"
+movie["year_released"] = 2008
+movie["rated"] = "PG-13"
+movie["studio_id"] = warner["id"]
+movie.save
 
 batman2 = Movie.find_by({"title" => "The Dark Knight"})
 
